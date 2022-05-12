@@ -1,0 +1,19 @@
+[Unit]
+Description=UDP-serial connector for IO board
+ 
+[Service]
+Type=simple
+ 
+User=pi
+Group=pi
+ 
+ExecStart=/home/pi/serduck/target/debug/serduck -s /dev/io_board -b 115200  -u 0.0.0.0:3457
+ 
+Restart=on-failure
+RestartSec=2
+ 
+# Configures the time to wait before service is stopped forcefully.
+TimeoutStopSec=300
+ 
+[Install]
+WantedBy=multi-user.target
