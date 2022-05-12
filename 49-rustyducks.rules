@@ -1,5 +1,8 @@
-
+#Dalek
 SUBSYSTEM=="tty", ATTRS{product}=="TTL232R-3V3", ATTRS{serial}=="FTBG0FKN", SYMLINK+="io_board", GROUP="plugdev"
 SUBSYSTEM=="tty", ATTRS{product}=="rusty_ducks_CP2102", ATTRS{serial}=="blacky", SYMLINK+="base", GROUP="plugdev"
 SUBSYSTEM=="tty", ATTRS{product}=="LD06", ATTRS{serial}=="LD06_hiboux", SYMLINK+="lidar", GROUP="plugdev"
 
+#Crolonome
+SUBSYSTEM=="tty", ATTRS{product}=="TTL232R-3V3", ATTRS{serial}=="FTBG0IMT", SYMLINK+="io_board", GROUP="plugdev"
+SUBSYSTEM=="tty", ATTRS{product}=="TTL232R-3V3", ATTRS{serial}=="FTBG0G1X", SYMLINK+="base", GROUP="plugdev"
