@@ -6,3 +6,4 @@ SUBSYSTEM=="tty", ATTRS{product}=="LD06", ATTRS{serial}=="LD06_hiboux", SYMLINK+
 #Crolonome
 SUBSYSTEM=="tty", ATTRS{product}=="TTL232R-3V3", ATTRS{serial}=="FTBG0IMT", SYMLINK+="io_board", GROUP="plugdev"
 SUBSYSTEM=="tty", ATTRS{product}=="TTL232R-3V3", ATTRS{serial}=="FTBG0G1X", SYMLINK+="base", GROUP="plugdev"
+SUBSYSTEM=="tty", ATTRS{product}=="CP2102 USB to UART Bridge Controller", ATTRS{serial}=="Doug", SYMLINK+="lidar", GROUP="plugdev"
