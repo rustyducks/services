@@ -1,0 +1,18 @@
+[Unit]
+Description=Lidar Pipeline
+ 
+[Service]
+Type=simple
+ 
+User=pi
+Group=pi
+ 
+ExecStart=/home/pi/rustyducks_ws/src/lidar_pipeline/target/debug/lidar_pipeline /home/pi/rustyducks_ws/src/lidar_pipeline/obstacles_lidar_mask.yaml
+ 
+Restart=on-failure
+RestartSec=2 
+# Configures the time to wait before service is stopped forcefully.
+TimeoutStopSec=300
+ 
+[Install]
+WantedBy=multi-user.target
