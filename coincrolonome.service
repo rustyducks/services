@@ -1,5 +1,7 @@
 [Unit]
 Description=CoinCrolonome
+After=duckbase.service duckio.service lidar.service
+Requires=duckbase.service duckio.service lidar.service
  
 [Service]
 Type=simple
