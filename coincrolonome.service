@@ -8,6 +8,7 @@ Type=simple
  
 User=pi
 Group=pi
+SupplementaryGroups=adm dialout cdrom sudo audio video plugdev games users input netdev gpio i2c spi
  
 ExecStart=/home/pi/CoinCrolonome
  
